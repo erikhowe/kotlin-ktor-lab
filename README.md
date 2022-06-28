@@ -13,6 +13,13 @@ A dynamic blogging website with a persistent database for articles. Backend stac
 4. [FreeMarker 2.3.31](https://freemarker.apache.org/)
 5. [Kotlin 1.7.0](https://kotlinlang.org/)
 
+## Local Deployment
+
+`git clone https://github.com/erikhowe/kotlin-ktor-lab.git`
+`cd kotlin-ktor-lab`
+`./gradlew run`
+`open http:localhost:9000`
+
 ## Personal Notes
 Kotlin data class - class whose main purpose is to hold data
 compiler automatically derives equals(), toString(), componentN(), and copy() from the primary constructor
