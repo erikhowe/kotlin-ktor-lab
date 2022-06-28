@@ -16,8 +16,11 @@ A dynamic blogging website with a persistent database for articles. Backend stac
 ## Local Deployment
 
 `git clone https://github.com/erikhowe/kotlin-ktor-lab.git`
+
 `cd kotlin-ktor-lab`
+
 `./gradlew run`
+
 `open http:localhost:9000`
 
 ## Personal Notes
