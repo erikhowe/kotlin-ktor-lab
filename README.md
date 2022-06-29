@@ -21,7 +21,7 @@ A dynamic blogging website with a persistent database for articles. Backend stac
 
 `./gradlew run`
 
-`open http:localhost:9000`
+`open http:localhost:5000`
 
 ## Personal Notes
 Kotlin data class - class whose main purpose is to hold data
