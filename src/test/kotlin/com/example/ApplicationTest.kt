@@ -23,5 +23,11 @@ class ApplicationTest {
         client.get("/").apply {
             assertEquals(HttpStatusCode.OK, status)
         }
+        client.get("/articles").apply {
+            assertEquals(HttpStatusCode.OK, status)
+        }
+        client.get("/articles/new").apply {
+            assertEquals(HttpStatusCode.OK, status)
+        }
     }
 }
