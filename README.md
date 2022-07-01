@@ -51,4 +51,4 @@ Ktor provides a special testing engine that doesn't create a web server, doesn't
 
 ## Testing Notes
 
-Use the testApplication function to set up a configured instance of a test application running locally.
+Testing in Ktor is done using JUnit and begins with the creation of a JUnit test class and a test function. The testApplication function sets up a configured instance of a test application running locally. AKtor HTTP client instance is used within the testApplicaiton function to make requests to the server, receive a response, and make assertions. Since we created a server using the `application.conf` configuration, the modules of our application are loaded automatically 
