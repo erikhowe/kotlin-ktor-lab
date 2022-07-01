@@ -2,6 +2,7 @@ package com.example.dao
 
 import com.example.models.*
 
+// Interface to abstract model operations
 interface DAOFacade {
     suspend fun allArticles(): List<Article>
     suspend fun article(id: Int): Article?

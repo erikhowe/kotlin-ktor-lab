@@ -7,6 +7,7 @@ import kotlinx.coroutines.runBlocking
 import org.jetbrains.exposed.sql.*
 
 class DAOFacadeImpl : DAOFacade {
+    // Exposed DSL method to convert database info into row object
     private fun resultRowToArticle(row: ResultRow) = Article(
         id = row[Articles.id],
         title = row[Articles.title],
