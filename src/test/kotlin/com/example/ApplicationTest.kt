@@ -23,11 +23,15 @@ class ApplicationTest {
         client.get("/").apply {
             assertEquals(HttpStatusCode.OK, status)
         }
-        client.get("/articles").apply {
-            assertEquals(HttpStatusCode.OK, status)
-        }
-        client.get("/articles/new").apply {
-            assertEquals(HttpStatusCode.OK, status)
-        }
+    }
+    @Test
+    fun testArticles() = testApplication {
+        val response = client.get("/articles")
+        assertEquals(HttpStatusCode.OK, response.status)
+    }
+    @Test
+    fun testNewArticle() = testApplication {
+        val response = client.get("/articles/new")
+        assertEquals(HttpStatusCode.OK, response.status)
     }
 }
